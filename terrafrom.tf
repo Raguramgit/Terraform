@@ -124,4 +124,3 @@ resource "aws_instance" "private" {
   key_name                    =  "today2502"
   vpc_security_group_ids      =  ["${aws_security_group.allow_all.id}"]
   
-}
