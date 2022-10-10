@@ -1,5 +1,5 @@
 provider "aws" {
-  region  =  "us-east-1"
+  region  =  "ap-southeast-1"
 }
 
 resource "aws_vpc" "myvpc" {
@@ -40,9 +40,6 @@ resource "aws_route_table" "pubrt" {
     cidr_block = "0.0.0.0/0"
     gateway_id = aws_internet_gateway.tigw.id
   }
-
-
-
   tags = {
     Name = "publicRT"
   }
