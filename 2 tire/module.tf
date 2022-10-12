@@ -1,5 +1,5 @@
 module "vpc" {
-    source = "https://github.com/Raguramgit/Terraform/blob/main/2%20tire/module.tf"
+    source = "../vpc"
     myvpc = myvpc
     environment = prod
     subnet = subnet
