@@ -1,5 +1,5 @@
 module "vpc" {
-    source = "../vpc"
+    source = "../modules"
     myvpc = myvpc
     environment = prod
     subnet = subnet
